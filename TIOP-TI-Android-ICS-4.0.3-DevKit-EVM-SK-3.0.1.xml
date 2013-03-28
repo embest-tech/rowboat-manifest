@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="git://gitorious.org/rowboat" name="rowboat"/>
+  <remote fetch="git://github.com/TIOP" name="TIOP-github"/>
   
   <default remote="rowboat" revision="rowboat-ics"/>
   
@@ -150,7 +151,7 @@
   <project name="hardware-ti-sgx" path="hardware/ti/sgx" revision="eb94bf95059bc2395b20dbea04b876c5c6fc0137"/>
   <project name="hardware-ti-wlan" path="hardware/ti/wlan" revision="d89f7a255e940fc5ae9ef885d989a313c16f740d"/>
   <project name="hardware-ti-wpan" path="hardware/ti/wpan" revision="4961a8d04fa57adef98896aa4ee592aff4248298"/>
-  <project name="kernel" revision="407167ad5a8f211539912caa4e0ada4f1df287a7"/>
+  <project name="rowboat-kernel" path="kernel" remote="TIOP-github" revision="TIOP_rowboat-am335x-kernel-3.2"/>
   <project name="libcore" revision="10e016f2b607a3ea8ee9c60ca95bec97f26024f2"/>
   <project name="ndk" revision="2d77f5a05f60029c981f299b222cfe28db18ccf7"/>
   <project name="packages-apps-amazed" path="packages/apps/Amazed" revision="caaeef58beee3c828d67d49c28e828a513393ccd"/>
@@ -219,7 +220,7 @@
   <project name="system-media" path="system/media" revision="a8eea50f80327f15cb04bbdfee2d1cfcc4c3ce4a"/>
   <project name="system-netd" path="system/netd" revision="adbcc860ce353b412f51b63e2e813586cfaa5860"/>
   <project name="system-vold" path="system/vold" revision="e856ddb6c2d7e549ae9205da11bf97d189341b95"/>
-  <project name="u-boot" revision="63097683e67ea9b421bb2bed03b2acaaded4aff0"/>
+  <project name="u-boot-am33x" path="u-boot" remote="TIOP-github" revision="TIOP_AM335XPSP_04.06.00.08"/>
   <project name="vendor-ti-am335xevm" path="device/ti/am335xevm" revision="7198232cec46171ae8f6f35c796327c8abdbf4ff"/>
   <project name="vendor-ti-am335xevm_sk" path="device/ti/am335xevm_sk" revision="6043ced466cb21ce95ec8ce99f4e9d0febc639b3"/>
   <project name="vendor-ti-beaglebone" path="device/ti/beaglebone" revision="5c879d9a8c737fb9baaac1acd70b44ed0a167259"/>
