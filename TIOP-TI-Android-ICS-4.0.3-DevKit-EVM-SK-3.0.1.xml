@@ -172,7 +172,7 @@
   <project name="packages-apps-gallery2" path="packages/apps/Gallery2" revision="edcc33f63f1ac14c9527bb2064996f6a27c6e3a2"/>
   <project name="packages-apps-htmlviewer" path="packages/apps/HTMLViewer" revision="4230220ef8be426d69bb1a3f0f7a012793ce0d27"/>
   <project name="packages-apps-keychain" path="packages/apps/KeyChain" revision="dbfabf9856a86fbe0f072edddae70fda52e8a46d"/>
-  <project name="packages-apps-launcher2" path="packages/apps/Launcher2" remote="TIOP-github" revision="828ca79486c391c554045647485106f9822cdd7a"/>
+  <project name="packages-apps-launcher2" path="packages/apps/Launcher2" remote="TIOP-github" revision="TIOP_ICS"/>
   <project name="packages-apps-mms" path="packages/apps/Mms" revision="49bb6b8c903cf802bb870ce2cb6937d7b68a5c78"/>
   <project name="packages-apps-music" path="packages/apps/Music" revision="7aa6b3f025bfab50ab510690490bd9d5a91fe8e8"/>
   <project name="packages-apps-musicfx" path="packages/apps/MusicFX" revision="b6436a644aa2e78dac41e4971b60d0b8ad95884e"/>
@@ -224,5 +224,5 @@
   <project name="vendor-ti-am335xevm" path="device/ti/am335xevm" revision="7198232cec46171ae8f6f35c796327c8abdbf4ff"/>
   <project name="vendor-ti-am335xevm_sk" path="device/ti/am335xevm_sk" revision="6043ced466cb21ce95ec8ce99f4e9d0febc639b3"/>
   <project name="vendor-ti-beaglebone" path="device/ti/beaglebone" revision="5c879d9a8c737fb9baaac1acd70b44ed0a167259"/>
-  <project name="vendor-embest" path="device/embest" remote="TIOP-github" revision="0778756411e3bd3a2419831d82c1f7ec86ad15d0"/>
+  <project name="vendor-embest" path="device/embest" remote="TIOP-github" revision="master"/>
 </manifest>
