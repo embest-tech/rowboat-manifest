@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="git://gitorious.org/rowboat" name="rowboat"/>
-  <remote fetch="git://github.com/TIOP" name="TIOP-github"/>
   <remote fetch="git://github.com/embest-tech" name="embest-tech-github"/>
   
   <default remote="rowboat" revision="rowboat-ics"/>
@@ -11,7 +10,7 @@
   <project name="bootable-bootloader-legacy" path="bootable/bootloader/legacy" revision="d3271024770ddcc2fb87dd22f8280764545ab05a"/>
   <project name="bootable-diskinstaller" path="bootable/diskinstaller" revision="411bb9df76e5b21affae73f076e5d292197b66be"/>
   <project name="bootable-recovery" path="bootable/recovery" revision="441031dadc4f5e8c1487468229781702bc08fb14"/>
-  <project name="build" revision="d30f917435d93c927fbefcceee4256df6cae339d">
+  <project name="rowboat-build" path="build" remote="embest-tech-github" revision="TIOP-rowboat-ics">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project name="cts" revision="0e0ff7494a35d05618923cb11586d9487cf5b62e"/>
@@ -102,7 +101,7 @@
   <project name="external-pcre" path="external/pcre" revision="0c84e04724db3a5c658be99847eb196edce6009f"/>
   <project name="external-ping" path="external/ping" revision="e9640ed4c9c4441b512fd17344b8ca7ab507c176"/>
   <project name="external-ping6" path="external/ping6" revision="82aaae2089b39522da2d4f93a996d78930ec3382"/>
-  <project name="external-ppp" path="external/ppp" revision="ab377ba41c51981a0fa4d5aaf350fe4ca540a610"/>
+  <project name="rowboat-external-ppp" path="external/ppp" remote="embest-tech-github" revision="TIOP-rowboat-ics"/>
   <project name="external-proguard" path="external/proguard" revision="10aa7224f49abe49d123bde5d34346202d49aaca"/>
   <project name="external-protobuf" path="external/protobuf" revision="e217977611c52bccde7f7c78e1d3c790c6357431"/>
   <project name="external-qemu" path="external/qemu" revision="1236dabbd7da7aca088b191d878e645dc0529d3a"/>
@@ -133,7 +132,7 @@
   <project name="external-xmlwriter" path="external/xmlwriter" revision="e95d92246ee35273dde2bee8b00485cc14c12be5"/>
   <project name="external-yaffs2" path="external/yaffs2" revision="6232e2d5ab34a40d710e4b05ab0ec6e3727804e7"/>
   <project name="external-zlib" path="external/zlib" revision="69e5801bd16a495e1c1666669fe827b1ddb8d56b"/>
-  <project name="frameworks-base" path="frameworks/base" revision="6a90d7a9bf5518d74e237fda52788f47be323061"/>
+  <project name="rowboat-frameworks-base" path="frameworks/base" remote="embest-tech-github" revision="TIOP-rowboat-ics"/>
   <project name="frameworks-compile-libbcc" path="frameworks/compile/libbcc" revision="31e50d678d2a8aa28c6f38cccebfa3da2f78df4a"/>
   <project name="frameworks-compile-linkloader" path="frameworks/compile/linkloader" revision="9f4c28af2b830f6400c32d1f481e680346bbf33f"/>
   <project name="frameworks-compile-slang" path="frameworks/compile/slang" revision="4b1c682051cb9a989b142b6b691381c38c43ff02"/>
@@ -147,12 +146,12 @@
   <project name="frameworks-support" path="frameworks/support" revision="4c0a3a36ec67eb02b6e78a59ee8574f8bb285b8c"/>
   <project name="hardware-libhardware" path="hardware/libhardware" revision="f4fdaebcf361d7cf15d41dc4d994aedf4c42432e"/>
   <project name="hardware-libhardware_legacy" path="hardware/libhardware_legacy" revision="153d0f1a27e0a157cabb6ca9d0d88248630f5695"/>
-  <project name="hardware-ril" path="hardware/ril" revision="300105d1487f5238940c18792b879793826b61f4"/>
-  <project name="hardware-ti-omap3" path="hardware/ti/omap3" revision="386b90d2de47586eb0b892450daa6bbb1d6ce5b6"/>
+  <project name="rowboat-hardware-ril" path="hardware/ril" remote="embest-tech-github" revision="TIOP-rowboat-ics"/>
+  <project name="rowboat-hardware-ti-omap3" path="hardware/ti/omap3" remote="embest-tech-github" revision="TIOP-rowboat-ics"/>
   <project name="hardware-ti-sgx" path="hardware/ti/sgx" revision="eb94bf95059bc2395b20dbea04b876c5c6fc0137"/>
   <project name="hardware-ti-wlan" path="hardware/ti/wlan" revision="d89f7a255e940fc5ae9ef885d989a313c16f740d"/>
-  <project name="hardware-ti-wpan" path="hardware/ti/wpan" revision="4961a8d04fa57adef98896aa4ee592aff4248298"/>
-  <project name="rowboat-kernel" path="kernel" remote="TIOP-github" revision="TIOP_rowboat-am335x-kernel-3.2"/>
+  <project name="rowboat-hardware-ti-wpan" path="hardware/ti/wpan" remote="embest-tech-github" revision="TIOP-rowboat-ics"/>
+  <project name="rowboat-kernel" path="kernel" remote="embest-tech-github" revision="TIOP_rowboat-am335x-kernel-3.2"/>
   <project name="libcore" revision="10e016f2b607a3ea8ee9c60ca95bec97f26024f2"/>
   <project name="ndk" revision="2d77f5a05f60029c981f299b222cfe28db18ccf7"/>
   <project name="packages-apps-amazed" path="packages/apps/Amazed" revision="caaeef58beee3c828d67d49c28e828a513393ccd"/>
@@ -173,7 +172,7 @@
   <project name="packages-apps-gallery2" path="packages/apps/Gallery2" revision="edcc33f63f1ac14c9527bb2064996f6a27c6e3a2"/>
   <project name="packages-apps-htmlviewer" path="packages/apps/HTMLViewer" revision="4230220ef8be426d69bb1a3f0f7a012793ce0d27"/>
   <project name="packages-apps-keychain" path="packages/apps/KeyChain" revision="dbfabf9856a86fbe0f072edddae70fda52e8a46d"/>
-  <project name="packages-apps-launcher2" path="packages/apps/Launcher2" remote="TIOP-github" revision="TIOP-rowboat-ics"/>
+  <project name="rowboat-packages-apps-launcher2" path="packages/apps/Launcher2" remote="embest-tech-github" revision="TIOP-rowboat-ics"/>
   <project name="packages-apps-mms" path="packages/apps/Mms" revision="49bb6b8c903cf802bb870ce2cb6937d7b68a5c78"/>
   <project name="packages-apps-music" path="packages/apps/Music" revision="7aa6b3f025bfab50ab510690490bd9d5a91fe8e8"/>
   <project name="packages-apps-musicfx" path="packages/apps/MusicFX" revision="b6436a644aa2e78dac41e4971b60d0b8ad95884e"/>
@@ -216,7 +215,7 @@
   <project name="prebuilt" revision="02ec58d06bc3c2f44550f454e2e56932459870b7"/>
   <project name="sdk" revision="fa5aaded8f89a8c42a03f8424299342b541cbafa"/>
   <project name="system-bluetooth" path="system/bluetooth" revision="2588cd802f322650ed737dfb7a10e9ad94064e99"/>
-  <project name="system-core" path="system/core" revision="91f49da394d13496b8a2ecf461ed137bcfbb630f"/>
+  <project name="rowboat-system-core" path="system/core" remote="embest-tech-github" revision="TIOP-rowboat-ics"/>
   <project name="system-extras" path="system/extras" revision="0dbb4f8155df7852810e257de767b1f701f2fe3c"/>
   <project name="system-media" path="system/media" revision="a8eea50f80327f15cb04bbdfee2d1cfcc4c3ce4a"/>
   <project name="system-netd" path="system/netd" revision="adbcc860ce353b412f51b63e2e813586cfaa5860"/>
@@ -225,5 +224,5 @@
   <project name="vendor-ti-am335xevm" path="device/ti/am335xevm" revision="7198232cec46171ae8f6f35c796327c8abdbf4ff"/>
   <project name="vendor-ti-am335xevm_sk" path="device/ti/am335xevm_sk" revision="6043ced466cb21ce95ec8ce99f4e9d0febc639b3"/>
   <project name="vendor-ti-beaglebone" path="device/ti/beaglebone" revision="5c879d9a8c737fb9baaac1acd70b44ed0a167259"/>
-  <project name="vendor-embest" path="device/embest" remote="TIOP-github" revision="master"/>
+  <project name="rowboat-vendor-embest" path="device/embest" remote="embest-tech-github" revision="master"/>
 </manifest>
