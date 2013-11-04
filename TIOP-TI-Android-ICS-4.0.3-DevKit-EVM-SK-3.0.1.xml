@@ -225,4 +225,5 @@
   <project name="vendor-ti-am335xevm_sk" path="device/ti/am335xevm_sk" revision="6043ced466cb21ce95ec8ce99f4e9d0febc639b3"/>
   <project name="vendor-ti-beaglebone" path="device/ti/beaglebone" revision="5c879d9a8c737fb9baaac1acd70b44ed0a167259"/>
   <project name="rowboat-vendor-embest" path="device/embest" remote="embest-tech-github" revision="master"/>
+  <project name="embest-build-ubi" path="./" remote="embest-tech-github" revision="master"/>
 </manifest>
