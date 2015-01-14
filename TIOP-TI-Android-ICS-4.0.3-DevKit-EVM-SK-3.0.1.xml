@@ -127,7 +127,7 @@
   <project name="external-webrtc" path="external/webrtc" revision="4b6dc1ec58105d17dc8c2f550124cc0621dc93b7"/>
   <project name="external-wpa_supplicant" path="external/wpa_supplicant" revision="a01d37870bbf9892d43e792e5de0683ca41c5497"/>
   <project name="external-wpa_supplicant_6" path="external/wpa_supplicant_6" revision="3d8fdea07212e99beb0ef9b1ef1e9e2c3d48482d"/>
-  <project name="external-wpa_supplicant_8" path="external/wpa_supplicant_8" revision="9ecdadc18436753cbe2827234d03afa939a3ca60"/>
+  <project name="rowboat-external-wpa_supplicant_8" path="external/wpa_supplicant_8" remote="embest-tech-github" revision="TIOP-rowboat-ics"/>
   <project name="external-wpa_supplicant_8_wilink8" path="external/wpa_supplicant_8_wilink8" revision="b10279f231b7ae8ae9c1b1cc8718137fcb2f9014"/>
   <project name="external-xmlwriter" path="external/xmlwriter" revision="e95d92246ee35273dde2bee8b00485cc14c12be5"/>
   <project name="external-yaffs2" path="external/yaffs2" revision="6232e2d5ab34a40d710e4b05ab0ec6e3727804e7"/>
